@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Akilan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+   * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #000000; /* Black background */
+  color: #ccd6f6; /* Light blue text */
+}
+
+/* Header */
+header {
+  background-color: #0a192f; /* Dark blue */
+  color: white;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav h1 {
+  font-size: 24px;
+  color: #64ffda; /* Neon cyan accent */
+  text-shadow: 1px 1px 3px #000;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #ccd6f6;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #64ffda;
+}
+
+/* Profile */
+.profile {
+  color: #ccd6f6;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #112240; /* Darker blue section */
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 180px;
+  height: 200px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+}
+
+.profile img:hover {
+  transform: scale(1.05);
+}
+
+.profile-info {
+  max-width: 500px;
+  text-align: center;
+}
+
+.profile-info h2 {
+  margin-bottom: 10px;
+  color: #64ffda;
+}
+
+/* Skills */
+.skills {
+  padding: 40px 20px;
+  background-color: #000000;
+}
+
+.skills h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #64ffda;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill-name {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.progress {
+  height: 20px;
+  background: #233554; /* muted dark blue */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  text-align: right;
+  padding-right: 10px;
+  color: white;
+  background-color: #64ffda;
+  border-radius: 10px;
+}
+
+/* Projects */
+.projects {
+  padding: 40px 20px;
+  background-color: #112240;
+}
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #64ffda;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  background-color: #233554;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project h3 {
+  margin-bottom: 10px;
+  color: #64ffda;
+}
+
+.project p {
+  font-size: 14px;
+  color: #ccd6f6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .profile {
+    flex-direction: column;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <h1>ASHWIN</h1>
+      <ul>
+        <li><a href="#profile">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Profile Section -->
+  <section id="profile" class="profile">
+    <img src=" alt="Ashwin's photo" />
+    <div class="profile-info">
+      <h2>Hi, I'm ASHWIN</h2>
+      <p>A passionate front-end developer with a knack for creating elegant and responsive web designs. I love crafting clean UIs and bringing ideas to life in the browser.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>My Skills</h2>
+
+    <div class="skill">
+      <div class="skill-name">HTML</div>
+      <div class="progress"><div class="progress-bar" style="width: 90%;">90%</div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">CSS</div>
+      <div class="progress"><div class="progress-bar" style="width: 85%;">85%</div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">JavaScript</div>
+      <div class="progress"><div class="progress-bar" style="width: 75%;">75%</div></div>
+    </div>
+
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+
+    <div class="project-grid">
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio built using HTML, CSS, and responsive design techniques.</p>
+      </div>
+      <div class="project">
+        <h3>Weather App</h3>
+        <p>Displays real-time weather data using OpenWeather API with modern UI.</p>
+      </div>
+      <div class="project">
+        <h3>To-Do List</h3>
+        <p>A sleek to-do app with local storage, filters, and animations.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
+
+
+
